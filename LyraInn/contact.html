@@ -1,177 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lyra Inn - Contact Us</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <img src="images/Lyra-logo.png" alt="Hotel Logo" />
-        <h1>LYRA INN</h1>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-          </li>
-          <li>
-            <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
-          </li>
-          <li>
-            <a href="facilities.html"
-              ><i class="fas fa-building"></i> Facilities</a
-            >
-          </li>
-          <li>
-            <a href="contact.html"
-              ><i class="fas fa-envelope"></i> Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyra Inn - Contact Us</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/Lyra-logo.png" alt="Hotel Logo" />
+      <h1>LYRA INN</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="facilities.html"><i class="fas fa-building"></i> Facilities</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Contact Us Content -->
-    <section id="contact">
-      <h2>Get In Touch</h2>
-      <div class="contact-container">
-        <!-- Left Side: Contact Info -->
-        <div class="contact-info">
-          <div class="info-card">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Address</h3>
-            <p>123 Hotel Street, Jaffna.</p>
-          </div>
-          <div class="info-card">
-            <i class="fas fa-phone-alt"></i>
-            <h3>Phone</h3>
-            <p>+123 456 7890</p>
-          </div>
-          <div class="info-card">
-            <i class="fas fa-envelope"></i>
-            <h3>Email</h3>
-            <p>info@lyrainn.com</p>
-          </div>
-        </div>
-
-        <!-- Right Side: Form -->
-        <form action="#" method="post">
-          <h3>Send a Message</h3>
-          <div class="input-group">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="input-group">
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Phone"
-              required
-            />
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-              required
-            />
-          </div>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Message"
-            required
-          ></textarea>
-          <div class="customer-type">
-            <label>Customer Type:</label>
-            <input type="radio" id="new" name="customer" value="new" required />
-            <label for="new">New Customer</label>
-            <input
-              type="radio"
-              id="returning"
-              name="customer"
-              value="returning"
-              required
-            />
-            <label for="returning">Returning Customer</label>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
-      <!-- Map -->
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31465.037672666025!2d80.00782710880961!3d9.669956936820059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe53fd7be66aa5%3A0xc7da0d9203baf512!2sJaffna!5e0!3m2!1sen!2slk!4v1742456998413!5m2!1sen!2slk"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img src="images/Lyra-logo.png" alt="Hotel Logo" class="green-logo" />
-          <p>+123 456 7890</p>
-          <p>info@lyrainn.com</p>
+  <!-- Contact Form Section -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Address</h3>
           <p>123 Hotel Street, Jaffna.</p>
         </div>
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#facilities">Facilities</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
+        <div class="info-card">
+          <i class="fas fa-phone-alt"></i>
+          <h3>Phone</h3>
+          <p>+123 456 7890</p>
         </div>
-
-        <!-- Right: Subscribe Section -->
-        <div class="footer-subscribe">
-          <h3>Subscribe to Newsletter</h3>
-          <form action="#" method="post">
-            <input type="email" placeholder="Email" />
-            <button type="submit">Subscribe</button>
-          </form>
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>info@lyrainn.com</p>
         </div>
       </div>
 
-      <!-- Footer Bottom: Social Icons and Copyright -->
-      <div class="footer-bottom">
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+      <!-- Contact Form -->
+      <form id="contact-form">
+        <h3>Send a Message</h3>
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
         </div>
-        <p>&copy; 2025 LYRA INN. All rights reserved.</p>
+        <div class="input-group">
+          <input type="tel" name="phone" placeholder="Phone" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+        </div>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="hidden" name="time" id="time" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Map -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31465.037672666025!2d80.00782710880961!3d9.669956936820059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe53fd7be66aa5%3A0xc7da0d9203baf512!2sJaffna!5e0!3m2!1sen!2slk!4v1742456998413!5m2!1sen!2slk"
+        width="600" height="450" style="border:0" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/Lyra-logo.png" alt="Hotel Logo" class="green-logo" />
+        <p>+123 456 7890</p>
+        <p>info@lyrainn.com</p>
+        <p>123 Hotel Street, Jaffna.</p>
       </div>
-    </footer>
-  </body>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-subscribe">
+        <h3>Subscribe to Newsletter</h3>
+        <form action="#" method="post">
+          <input type="email" placeholder="Email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2025 LYRA INN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- EmailJS Setup -->
+  <script>
+    (function () {
+      emailjs.init("BhSjpGeb1ASQC-NOl"); // Replace with your Public Key
+
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Set the time input
+        document.getElementById("time").value = new Date().toLocaleString();
+
+        emailjs.sendForm("service_egw3lxw", "template_th8dowm", this)
+          .then(() => {
+            alert("Message sent successfully!");
+            this.reset();
+          })
+          .catch((error) => {
+            console.error("Failed to send message:", error);
+            alert("Failed to send message. Please check console or try again.");
+          });
+      });
+    })();
+  </script>
+</body>
 </html>
